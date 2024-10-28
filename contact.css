@@ -1,0 +1,155 @@
+*{
+    margin:0px;
+    padding:0px;
+    
+}
+html{
+    background:linear-gradient(to right,black,goldenrod,black) ;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    height:10vh;
+    align-items: center; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: mainnav 1s ease-in-out; 
+    position: sticky;
+    top: 0px;
+    background-color: black;
+    z-index: 2;
+}
+@keyframes mainnav{
+    0%{
+    transform: translateY(-100%);
+    }  
+    }
+
+.nav{
+    text-decoration: none;
+    margin-right: 50px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight :bold;
+
+}
+.nav:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-shadow: 2px 2px 4px gray;
+}
+.Logos{
+    margin-left: 10px;
+    color: darkred;
+
+}
+.logo{
+    height: 150px;
+}
+
+.Sign {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color:rgba(255,255,255,0.1);
+    font-weight :bold;
+    font-size: 10px;
+    padding: 10px;
+}
+
+.contact-us {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    padding-right: 50px;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contact-us h2 {
+    margin-bottom: 10px;
+}
+
+.contact-us p {
+    margin-bottom: 20px;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #e64a19;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+@media (max-width: 768px) {
+    html{
+        width:750px;
+     }
+     .top {
+         flex-direction: column;
+         height: 90px;
+     }
+     .logos{
+        margin-bottom: -70px;
+        padding-bottom: -20px;
+     }
+     .back{
+         width: 100%;
+     }
+     .logo{
+          margin-top: -50px;
+          /* margin-bottom: -110px; */
+     }
+     .Nav {
+         
+         margin-left: 70px;
+         margin-top:-50px ;
+     }
+ 
+     .signin {
+         position:absolute;
+         padding-top: 10px;
+         margin-left: 620px;
+     
+     }
+    .contact-us{
+        margin-top: 40px;
+        max-width: 300px;
+    }
+
+    button{
+        margin-left: 120px;
+    }
+    }

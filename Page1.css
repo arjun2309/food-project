@@ -1,0 +1,276 @@
+*{
+    margin:0px;
+    padding:0px;
+    
+}
+html{
+    overflow: auto;
+    background-color:lightgray ;
+    
+}
+.back{
+    background-image: url(./image/istockphoto-524653165-170667a.webp);  
+    height: 500px;
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0px 0px 25px 25px;
+    z-index: -1;
+   
+}
+   
+.main{
+    
+    display: flex;
+    justify-content: space-between;
+    height:10vh;
+    align-items: center; 
+    font-family: Garamond,serif;
+    animation: mainnav 1s ease-in-out; 
+    position: sticky;
+    top: 0px;
+    background-color: black;
+    border-radius: 0px 0px 20px 20px;
+    opacity: 0.8;
+    z-index: 1;
+    
+
+}
+@keyframes mainnav{
+    0%{
+    transform: translateY(-100%);
+    }  
+    }
+
+.nav{
+    text-decoration: none;
+    margin-right: 50px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight :bold;
+
+}
+.nav:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-shadow: 2px 2px 4px gray;
+}
+.Logos{
+    margin-left: 10px;
+    color: darkred;
+}
+.logo{
+    height: 150px;
+}
+.Sign {
+    margin-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color:rgba(255,255,255,0.1);
+    font-weight :bold;
+    font-size: 10px;
+    padding: 10px;
+    
+}
+
+.overall{
+    width:100%;
+    display : flex;
+}
+
+
+.content{
+    width:50%;
+    margin-top: 8%;
+    margin-left: 5%;
+    overflow: hidden;
+    animation: content 2s ease-in-out;
+    color: white;
+    }
+    .content h1{
+        letter-spacing: 4px;
+        text-shadow: 2px 2px 4px gray;
+        font-family: Garamond,serif;
+        font-size: 35px;
+    
+        }
+        span{
+             color: rgb(180, 22, 22);
+             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .content p{
+            color:black;
+            font-weight: bold;
+            word-spacing: 3px;
+            font-family: Garamond,serif;
+        }
+
+    @keyframes content {
+        0%{
+            opacity: 0;
+            transform: translateX(-100%);}
+            
+        }
+        button{
+            padding : 10px 20px;
+            background-color: black;
+          
+            font-size: 15px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        button a{
+            color: white;
+            text-decoration: none;
+        }
+        
+        button:hover{
+           background-image: linear-gradient(goldenrod,black);
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .biriyanis{ 
+            width:50%;
+            animation: biri 3s ease-in-out;
+            filter: drop-shadow(30px 10px 4px black);
+            background-image: url(./image/biriyani-removebg-preview.png);
+            float: left;
+            z-index: 0;
+            }
+        
+
+            @keyframes biri {
+                    0%{
+                        opacity: 0;
+                    }
+            }
+
+            .experience h2, .journey h2, .order-now h2, .contact h2{
+                letter-spacing: 1px;
+            }
+.experience, .journey, .order-now, .contact {
+    text-align: center;
+    color: maroon;
+    animation: taste 1s ease-in-out;
+    background:linear-gradient(to left,goldenrod,white,goldenrod);
+    border-radius: 40px 0px;
+}
+@keyframes taste {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);}
+        
+    }
+
+   
+.order-now li{
+    text-align: center;
+    animation: taste 1s ease-in-out;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.trails {
+    padding: 10px 20px;
+    margin: 1em auto;
+    max-width: 800px;
+    box-shadow: 5px 5px 5px grey;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.5); */
+    font-family: Garamond,serif;
+}
+.trails p{
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    font-family: Garamond,serif;
+}
+
+ul {
+    
+    padding: 0;
+    list-style-type: none;
+}
+
+
+ol {
+    padding-left: 12px;
+}
+
+footer {
+    text-align: center;
+    padding: 12px;
+    background:linear-gradient(to left,black,rgb(180, 22, 22),black);
+    color: white;
+    margin-top: 10px;
+}
+
+
+
+
+@media screen and (min-width:481px) and (max-width: 768px) {
+    html{
+       width:750px;
+    }
+    .main {
+        flex-direction: column;
+        height: 90px;
+    }
+    .logos{
+       margin-bottom: -70px;
+       padding-bottom: -20px;
+    }
+    .back{
+        width: 100%;
+    }
+    .logo{
+         margin-top: -50px;
+         /* margin-bottom: -110px; */
+    }
+    .Nav {
+        
+        margin-left: 70px;
+        margin-top:-50px ;
+    }
+
+    .signin {
+        position:absolute;
+        padding-top: 10px;
+        margin-left: 620px;
+    
+    }
+
+    .overall {
+        flex-direction: column;
+    }
+
+    .content {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .content p {
+        margin: 0;
+        padding: 20px;
+    }
+    .biriyanis {
+        width:100%;
+        background-image: url(./image/biriyani-removebg-preview.png);
+       background-size: 200px;
+       background-repeat: no-repeat;
+        height: 200px;
+        position: absolute;
+        margin-top: 230px;
+        margin-left:30px ;
+    }
+    button{
+       margin-left: 600px;        
+    }
+
+}
+

@@ -1,0 +1,434 @@
+*{
+    margin:0px;
+    padding:0px;
+    
+}
+html{
+    background-color: lightgray;
+    
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    height:10vh;
+    align-items: center; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: mainnav 1s ease-in-out; 
+    position: sticky;
+    top: 0px;
+    background-color: black;
+    z-index: 2;
+}
+@keyframes mainnav{
+    0%{
+    transform: translateY(-100%);
+    }  
+    }
+
+.nav{
+    text-decoration: none;
+    margin-right: 50px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight :bold;
+
+}
+.nav:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-shadow: 2px 2px 4px gray;
+}
+.Logos{
+    margin-left: 10px;
+    color: darkred;
+}
+.logo{
+    height: 150px;
+}
+.Sign {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color:rgba(255,255,255,0.1);
+    font-weight :bold;
+    font-size: 10px;
+    padding: 10px;
+}
+.sadhya{
+    background-image: url(./image/sadhyaa.jpg);
+    display: flex;
+    position: relative;
+    background-size: cover;
+    height: 400px;
+    width: 1349px;
+    overflow-x: auto;
+    z-index: 0;
+}
+.grey{
+    /* position: absolute; */
+    background:linear-gradient(to right,black,goldenrod,black) ;
+    height: 400px;
+    width: 1349px;
+    z-index: 1;
+    bottom: 153px;
+    opacity: 0.5;
+}
+.content{
+    position: absolute;
+    height: 120px;
+    width: 500px;
+    margin-left: 450px;
+    z-index: 1;
+    bottom: 60px;
+    text-align: center;
+    font-size: 25px;
+    border: 8px solid white;
+    padding-top: 30px;
+    border-radius: 20px;
+    margin-bottom: 250px;
+    font-family: Garamond,serif;
+   
+    
+}
+span{
+    color: orangered;
+    text-shadow: 2px 2px 3px black;
+}
+.about{
+    margin-left: 90px;
+    position: absolute;
+}
+.about h3{
+    font-family: "Lucida Handwriting";
+    margin-bottom: 55px;
+    font-size: 35px;
+}
+.tasty{
+    display: flex;
+    font-family: Garamond,serif;
+    font-weight: bold;
+    font-size:  20px;
+    letter-spacing: 1px;
+    word-spacing: 8px;
+    color: rgb(71, 70, 70);
+    
+    position: absolute;
+    left: auto;
+    width: 500px;
+    height: 120px;
+}
+.fish{
+    background-image: url(./image/fish.jpg);
+    height: 300px;
+    width: 600px;
+    margin-left: 700px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px black;
+}
+
+.our_story{
+    margin-top:40px;
+    margin-left: 90px;
+    position: absolute;
+}
+.our_story h3{
+    font-family: "Lucida Handwriting";
+    margin-bottom: 15px;
+    font-size: 35px;
+    margin-left: 700px;
+    position: absolute;
+    width: 200px;
+}
+.ourstory{
+    font-family: Garamond,serif;
+    font-weight: bold;
+    font-size:  20px;
+    letter-spacing: 1px;
+    word-spacing: 8px;
+    color: rgb(71, 70, 70);
+    padding-top: 100px;
+    margin-left: 700px;
+    position: absolute;
+    left: auto;
+    width: 500px;
+    height: 120px;
+}
+.puttu{
+    background-image: url(./image/puttu.jpg);
+    height: 300px;
+    width: 540px;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-left: 30px;
+    box-shadow: 10px 10px 8px black;
+}
+.mission{
+    margin-top:40px;
+    margin-left: 90px;
+    margin-top: 50px;
+}
+.mission h3{
+    font-family: "Lucida Handwriting";
+    font-size: 35px;
+    margin-top: 100px;
+    width: 400px;
+}
+.ourmission{
+    font-family: Garamond,serif;
+    font-weight: bold;
+    font-size:  20px;
+    letter-spacing: 1px;
+    word-spacing: 6px;
+    color: rgb(71, 70, 70);
+    padding-top: 30px;
+    width: 1200px;
+    list-style-type: none;
+}
+li{
+    list-style-type: none;
+    padding-top: 10px;
+}
+.miss{
+    font-weight: 1000;
+    text-shadow: none;
+    text-shadow: 1px 1px 2px black;
+    color: black;
+}
+.gallery{
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto auto ;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    
+    
+}
+.ourgallery{
+    font-family: "Lucida Handwriting";
+    font-size: 35px;
+    margin-top: 100px;
+    margin-bottom:  10px;
+    width: 1320px;
+    text-align: center;
+}
+
+.item{
+    height: 170px;
+    width: 350px;
+    background-size: cover;
+    border-radius: 50px;
+    box-shadow: 7px 7px 8px black;
+}
+.item1{
+    background-image: url(./image/ada.jpg);
+    margin-right:10px;
+    margin-bottom: 10px;
+
+   
+}
+.item2{
+    background-image: url(./image/appam.jpg);
+    margin-right:10px;
+    margin-bottom: 10px;
+    
+}
+
+.item3{
+    background-image: url(./image/beef\ fry.jpg);
+}
+
+.item4{
+    background-image: url(./image/parotta.jpg);
+}
+
+.item5{
+    background-image: url(./image/pazhampori.jpg);
+}
+
+.item6{
+    background-image: url(./image/thalabiri.jpg);
+}
+
+.join_family{
+    margin-top:0px;
+    margin-left: 90px;
+    word-spacing: 15px;
+    
+}
+.join_family h3{
+    font-family: "Lucida Handwriting";
+    margin-bottom: 10px;
+    font-size: 35px;
+    width: 1200px;
+    text-align: center;
+    /* padding-top: 50px; */
+}
+.joinfamily{
+    font-family: Garamond,serif;
+    font-weight: bold;
+    font-size:  20px;
+    letter-spacing: 1px;
+    word-spacing: 8px;
+    color: rgb(71, 70, 70);
+    padding-top: 25px;
+    /* margin-right:80px; */
+    text-align: center;
+    height: 120px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-content {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.footer-content a {
+    color:orange;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+    color: #ff5722;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    html{
+        width:750px;
+     }
+     .top {
+         flex-direction: column;
+         height: 90px;
+     }
+     .logos{
+        margin-bottom: -70px;
+        padding-bottom: -20px;
+     }
+     .back{
+         width: 100%;
+     }
+     .logo{
+          margin-top: -50px;
+          /* margin-bottom: -110px; */
+     }
+     .Nav {
+         
+         margin-left: 70px;
+         margin-top:-50px ;
+     }
+ 
+     .signin {
+         position:absolute;
+         padding-top: 10px;
+         margin-left: 620px;
+     
+     }
+     .sadhya{
+        height: 400px;
+        width: 100%;
+        /* opacity: 0.7; */
+
+    }
+    .grey{
+        /* position: absolute; */
+        background:linear-gradient(to right,black,goldenrod,black) ;
+        height:400px;
+        width: 100%;
+        z-index: 1;
+        bottom: 85px;
+        opacity: 0.5;
+        /* background-size: cover; */
+    }
+    .content{
+        width: 60%;
+        height:20%;
+        margin-left: 150px;
+        margin-bottom: 140px;
+
+    }
+    .aboutus ,.story{
+        display:flex;
+        flex-direction: column;
+    }
+    .about, .our_story, .mission{
+        margin-left: 0;
+        position: none;
+        width: 100%;
+    }
+    .about h3, .mission h3, .join_family h3{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .our_story h3{
+     margin-left: 300px ;
+     
+    }
+    .ourstory{
+        width: 99%;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+    .puttu{
+        width: 60%;
+        height:300px;
+        background-size: cover;
+        margin: 10px auto;
+        margin-top: 340px;
+    }
+    .tasty, .ourmission{
+        width: 99%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .fish{
+       
+        width: 60%;
+        height:300px;
+        background-size: cover;
+        margin: 10px auto;
+        margin-top: 250px;
+    }
+
+    .join_family{
+        margin: 10px auto;
+        text-align: center;
+        margin-left: -220px;
+        margin-top: 40px;
+    }
+    .ourgallery{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .gallery{
+        
+        grid-template-columns: 2fr 2fr;
+        width:100%;
+        margin: 0;
+        margin-top: 30px;
+        gap:10px;
+    }
+    
+}
+
